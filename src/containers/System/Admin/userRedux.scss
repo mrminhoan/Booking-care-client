@@ -1,0 +1,19 @@
+.review-img-container {
+    .label-upload {
+        padding: 7px;
+        border-radius: 3px;
+        background-color: #ddd;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+    .preview-image {
+        width: 80px;
+        height: 80px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    }
+}
