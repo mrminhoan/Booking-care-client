@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { FormattedMessage } from 'react-intl';
 import moment from 'moment';
 import { toast } from 'react-toastify';
-import LoadingOverlay from 'react-loading-overlay';
+// import LoadingOverlay from 'react-loading-overlay';
 
 import './ManagePatient.scss';
 import DatePicker from '../../../components/Input/DatePicker';
@@ -181,13 +181,13 @@ class DefaultClass extends Component {
                 />
 
 
-                <LoadingOverlay
+                {/* <LoadingOverlay
                     active={this.state.isShowLoading}
                     spinner
                     text='Loading your request'
                 >
                     <p>Request Loading</p>
-                </LoadingOverlay>
+                </LoadingOverlay> */}
             </>
 
         );
