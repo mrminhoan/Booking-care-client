@@ -57,11 +57,11 @@ class App extends Component {
                                     <Route path={path.HOMEPAGE} exact component={(HomePage)} />
                                     <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
                                     <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
-                                    <Route path={path.DETAIL_DOCTOR} component={userIsAuthenticated(DetailDoctor)} />
                                     <Route path={'/doctor/'} component={userIsAuthenticated(Doctor)} />
                                     <Route path={path.VERIFY_EMAIL_BOOKING} component={userIsAuthenticated(VerifyEmail)} />
-                                    <Route path={path.DETAIL_SPECIALTY} component={userIsAuthenticated(DetailSpecialty)} />
-                                    <Route path={path.DETAIL_CLINIC} component={userIsAuthenticated(DetailClinic)} />
+                                    <Route path={path.DETAIL_SPECIALTY} component={(DetailSpecialty)} />
+                                    <Route path={path.DETAIL_CLINIC} component={(DetailClinic)} />
+                                    <Route path={path.DETAIL_DOCTOR} component={(DetailDoctor)} />
 
 
                                 </Switch>
