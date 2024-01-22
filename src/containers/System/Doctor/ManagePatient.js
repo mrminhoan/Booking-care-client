@@ -184,9 +184,9 @@ class DefaultClass extends Component {
                 <LoadingOverlay
                     active={this.state.isShowLoading}
                     spinner
-                    text='Loading your content...'
+                    text='Loading your request'
                 >
-                    <p>Some content or children or something.</p>
+                    <p>Request Loading</p>
                 </LoadingOverlay>
             </>
 
