@@ -44,12 +44,6 @@ class App extends Component {
 
   componentDidMount() {
     this.handlePersistorState();
-    setInterval(async () => {
-      let res = await getAllSpecialty();
-      if (res && res.errCode === 0) {
-        console.log('Server is still working');
-      }
-    }, 600000);
   }
 
   render() {
