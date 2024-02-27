@@ -20,7 +20,7 @@ class Specialty extends Component {
     let res = await getAllSpecialty();
     if (res && res.errCode === 0) {
       this.setState({
-        dataSpecialty: []
+        dataSpecialty: res.data ? res.data : []
       });
     }
   }
